@@ -32,6 +32,6 @@ foreach ($animals as $animal) {
     $result[] = ' ';
 }
 
-echo implode("<br />", array_filter($result));
+echo implode("<br>", $result);
 
 
