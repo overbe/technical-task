@@ -19,7 +19,7 @@ class DogTest extends TestCase
         $this->assertEquals('Spike runs faster than light!', $dog->run());
         $this->assertEquals('Spike has bitten cat!', $dog->byte('cat'));
         $this->assertEquals('Spike ate bone!', $dog->eat('bone'));
-        $this->assertEquals('Yes it\'s true!', $dog->feedMilk());
+        $this->assertEquals('Feeds his children with a milk!', $dog->feedMilk());
         $this->assertEquals('Dog can\'t fly!', $dog->fly());
         $this->assertEquals('Dog can\'t tweet!', $dog->tweet());
     }

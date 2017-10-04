@@ -13,7 +13,17 @@ trait Magic
      * @param $args
      * @return string
      */
-    public function __call($methodName, $args) {
-        return (new \ReflectionClass($this))->getShortName() .' can\'t ' . $methodName . '!';
+    public function __call($methodName, $args)
+    {
+        return $this->getShortName() .' can\'t ' . $methodName . '!';
+    }
+
+    /**
+     * @return string
+     *
+     */
+    public function getShortName(): string
+    {
+        return (new \ReflectionClass($this))->getShortName();
     }
 }

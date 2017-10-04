@@ -15,7 +15,7 @@ abstract class Mammal extends Animal implements FeedMilkInterface
      */
     public function feedMilk(): string
     {
-        return 'Yes it\'s true!';
+        return 'Feeds his children with a milk!';
     }
 
 }

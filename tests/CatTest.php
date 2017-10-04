@@ -17,7 +17,7 @@ class CatTest extends TestCase
         $this->assertEquals('Tom meows like a cat. Meow, meow, meow!', $cat->meow());
         $this->assertEquals('Tom walks by itself!', $cat->walk());
         $this->assertEquals('Tom ate mouse!', $cat->eat('mouse'));
-        $this->assertEquals('Yes it\'s true!', $cat->feedMilk());
+        $this->assertEquals('Feeds his children with a milk!', $cat->feedMilk());
         $this->assertEquals('Cat can\'t fly!', $cat->fly());
         $this->assertEquals('Cat can\'t swim!', $cat->swim());
     }
